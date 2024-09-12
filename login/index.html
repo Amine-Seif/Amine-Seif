@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game with jQuery</title>
+  <link rel="stylesheet" href="index.css">
 </head>
-<body>
-    
+<body id="bo1">
+  <div id="game-area">
+    <img id="snake" src="/453029747_1021977326139274_5859486412157838389_n.jpg" alt="Snake"> 
+    <img id="apple" src="your-apple-image.png" alt="Apple"> 
+    <div id="game-over" class="message">Game Over</div>
+    <div id="winner" class="message">You are winner!</div>
+    <button id="replay-button" class="hidden">Replay</button>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
