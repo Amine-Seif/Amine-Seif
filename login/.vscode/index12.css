@@ -1,0 +1,41 @@
+#cont{
+    margin-left: 4%;
+    margin-top: 4%;
+    display: flex;
+}
+#pac{
+    width: 40%;
+}
+#butt{
+    margin: 226px 0px 0px -70px;
+}
+.button1 {
+    margin-left: 100px;
+    border-radius: 50%;
+    background-color: #fbff00;
+    color: black;
+    border: none;
+    padding: 30px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* margin: 4px 2px; */
+    cursor: pointer;
+    box-shadow: 0 4px 10px 0  rgba(238, 242, 119, 0.826), 0 4px 10px 0 rgba(238, 242, 119, 0.826);
+}
+.button1:hover{
+    background-color: aqua;
+    cursor: pointer;
+    transition: 0.3s;
+}
+@keyframes example {
+    from {background-color: rgb(12, 12, 12);}
+    to {background-color: rgb(255, 255, 255);}
+  }
+body{
+    background-color: rgb(12, 12, 12);
+    background-color: rgb(255, 255, 255);
+    animation-name: example;
+    animation-duration:10s;
+}
