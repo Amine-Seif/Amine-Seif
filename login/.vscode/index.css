@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+  }
+  
+  #game-area {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: #000;
+    border: 1px solid white;
+  }
+  
+  #snake {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+  }
+  
+  #apple {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+  }
+  
+  .message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    display: none;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
