@@ -16,19 +16,7 @@ function moveApple() {
   })
 }
 
-function gameOver() {
-    $('#game-over').show()
-  $('#replay-button').removeClass('hidden')
-  clearInterval(gameLoop)
-  clearInterval(appleInterval)
-}
 
-function youWin() {
-  $('#winner').show()
-  $('#replay-button').removeClass('hidden')
-    clearInterval(gameLoop)
-  clearInterval(appleInterval)
-}
 
 function moveSnake() {
   snakeX += dx
@@ -81,3 +69,17 @@ $('#replay-button').click(function() {
 })
 var gameLoop = setInterval(moveSnake, 150)
 var appleInterval = setInterval(moveApple, 1000)
+
+function gameOver() {
+    $('#game-over').show()
+  $('#replay-button').removeClass('hidden')
+  clearInterval(gameLoop)
+  clearInterval(appleInterval)
+}
+
+function youWin() {
+  $('#winner').show()
+  $('#replay-button').removeClass('hidden')
+    clearInterval(gameLoop)
+  clearInterval(appleInterval)
+}

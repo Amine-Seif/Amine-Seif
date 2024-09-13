@@ -14,24 +14,7 @@ function moveApple() {
     apple.css({ left: appleX + 'px', top: appleY + 'px' }).fadeIn(300)
   });
 }
-// function to trigger gameover
-// stop the game loop
-// stop moving the apple
-function gameOver() {
-  $('#game-over').show()
-  $('#replay-button').removeClass('hidden');
-  clearInterval(gameLoop) 
-  clearInterval(appleInterval) 
-}
-// function to display winner message
-// stop the game loop
-// stop moving the apple
-function youWin() {
-  $('#winner').show()
-  $('#replay-button').removeClass('hidden')
-  clearInterval(gameLoop) 
-  clearInterval(appleInterval) 
-}
+
 // function to move the snake(pacman)
 function moveSnake() {
   snakeX += dx
@@ -87,3 +70,21 @@ $('#replay-button').click(function() {
 var gameLoop = setInterval(moveSnake, 200)
 var appleInterval = setInterval(moveApple, 1200) 
 
+// function to trigger gameover
+// stop the game loop
+// stop moving the apple
+function gameOver() {
+    $('#game-over').show()
+    $('#replay-button').removeClass('hidden');
+    clearInterval(gameLoop) 
+    clearInterval(appleInterval) 
+  }
+  // function to display winner message
+  // stop the game loop
+  // stop moving the apple
+  function youWin() {
+    $('#winner').show()
+    $('#replay-button').removeClass('hidden')
+    clearInterval(gameLoop) 
+    clearInterval(appleInterval) 
+  }
